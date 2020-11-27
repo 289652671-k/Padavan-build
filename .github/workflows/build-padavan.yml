@@ -88,9 +88,9 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config #可以不集成
         echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config #网易云解锁
         echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config #网易云解锁GO版本执行文件（4M多）注意固件超大小,不集成会自动下载
+        echo "CONFIG_FIRMWARE_ENABLE_USB=n" >> .config #关闭USB
         echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
-        echo "CONFIG_RT2880_DRAM_512M=y" >> .config #内存512
-        echo "CONFIG_RALINK_RAM_SIZE=512" >> .config #内存512
+        echo "/CONFIG_FIRMWARE_PRODUCT_ID="K2P"" >> .config #内存512
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
